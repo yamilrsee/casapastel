@@ -1,0 +1,60 @@
+.main {
+    width: 100%;
+}
+
+.gallery {
+    width: min(90%, 75rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0 auto;
+    padding-top: 5.5em;
+    height: auto;
+
+    .gallery-btn {
+        color: var(--light);
+        background-color: var(--dark);
+        border-radius: 5em;
+        padding: .5em 1em;
+        border: 4px solid rgb(58, 58, 58);
+        user-select: none;
+        transition: background-color 0.15s ease,
+        transform 0.15s ease;
+        margin-bottom: 5em;
+
+        &:hover {
+            background-color: #1c1c1c;
+        }
+
+        &:active {
+            transform: scale(.980);
+        }
+    }
+}
+
+.gallery-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    max-width: 75em;
+
+    .g-card {
+        max-width: 20em;
+        padding: 0.5em;
+        height: fit-content;
+        background-color: var(--light);
+        box-shadow: 2px 2px 8px #1c1c1c58;
+        border-radius: 1em;
+        box-sizing: border-box; // makes padding part of width
+    }
+
+    .g-card > img {
+        width: 100%;
+        display: block;
+        border-radius: 0.8em;
+    }
+}

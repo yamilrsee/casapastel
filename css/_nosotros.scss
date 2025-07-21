@@ -1,0 +1,92 @@
+.nosotros {
+    width: min(85%, 68.75em);
+    min-height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nosotros-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nosotros-left {
+            display: flex;
+            flex-direction: column;
+            gap: .945em;
+
+            .nosotros-title {
+                font-weight: 800;
+                font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+                .accent {
+                    color: var(--primary-color);
+                }
+            }
+
+            .nosotros-p {
+                width: 90%;
+            }
+
+            .nosotros-cta {
+                background-color: var(--primary-color);
+                border: none;
+                font-weight: 700;
+                color: var(--light);
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: .3em .8em;
+                border-radius: 5em;
+                gap: .5em;
+                margin-top: .5em;
+                border: 2px solid #ff72f1;
+                box-shadow: 0 0 5px #10101046;
+                transition: background-color, transform, .15s ease;
+
+                &:hover {
+                    background-color: #f050e0;
+                }
+
+                &:active {
+                    transform: scale(.990);
+                }
+            }
+        }
+
+        .nosotros-right {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 30em;
+
+            .review-img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 989px) {
+
+    .nosotros {
+        margin-top: 2.5em;
+    }
+    
+    .nosotros-content {
+        flex-direction: column;
+        margin-top: 4em; margin-bottom: 4em;
+        gap: 1.5em;
+    }
+
+    .postres .gallery-btn {
+        font-size: 1rem;
+        padding: .4em .7em;
+    }
+
+    .postres .gallery-btn .gallery-icon {
+        width: 1.2em;
+    }
+}
